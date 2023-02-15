@@ -105,6 +105,30 @@ export class LinkedList {
         return null;
     }
 
+    insertAt(value, idx) {
+        if (idx <= 0) {
+            this.prepend(value)
+        } else if (idx >= this.size) {
+            this.append(value);
+        } else {
+            let newNode = new Node(value);
+            let preNode = this.at(idx - 1);
+            let postNode = preNode.nextNode;
+            preNode.setNext(newNode);
+            newNode.setNext(postNode);
+        }
+    }
+
+    removeAt(idx) {
+        if (idx <= 0) {
+            this.head = this.head.nextNode;
+        } else {
+            let removeNode = this.at(idx);
+            let preNode = this.at(idx - 1);
+            preNode.setNext(removeNode.nextNode);
+        }
+    }
+
     toString() {
         let printString = '';
         let thisNode = this.head;

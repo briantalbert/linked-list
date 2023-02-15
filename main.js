@@ -15,7 +15,7 @@ console.log('toStr:')
 console.log(myList + "");
 console.log(myList.toString());
 console.log('');
-console.log('prepend:');
+console.log('prepend (-12):');
 myList.prepend(-12);
 console.log(myList.toString());
 console.log('');
@@ -29,7 +29,7 @@ console.log(myList.getHead() + "");
 console.log(myList.getTail() + "");
 console.log('');
 
-console.log('at index:');
+console.log('at index 3:');
 console.log(myList.at(3) + "");
 console.log('');
 
@@ -37,14 +37,24 @@ console.log('pop:');
 console.log(myList.pop() + "");
 console.log('');
 
-console.log('contains (present/not present):');
+console.log('contains (dog - present/ cat -not present):');
 console.log(myList.contains('dog'));
 console.log(myList.contains('cat'));
 console.log('');
 
-console.log('find value (present/not present):');
+console.log('find value (69 - present/111385 - not present):');
 console.log(myList.find(69));
 console.log(myList.find(111385));
+console.log('');
+
+console.log('insertAt (butts, 3):');
+myList.insertAt('butts', 3);
+console.log(String(myList));
+console.log('');
+
+console.log('removeAt 5:');
+myList.removeAt(5);
+console.log(String(myList));
 console.log('');
 
 console.log(myList.toString()); 
