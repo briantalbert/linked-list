@@ -25,16 +25,16 @@ console.log(myList.getSize());
 console.log('');
 
 console.log('head/tail:');
-console.log(myList.getHead());
-console.log(myList.getTail());
+console.log(myList.getHead() + "");
+console.log(myList.getTail() + "");
 console.log('');
 
 console.log('at index:');
-console.log(myList.at(3));
+console.log(myList.at(3) + "");
 console.log('');
 
 console.log('pop:');
-console.log(myList.pop());
+console.log(myList.pop() + "");
 console.log('');
 
 console.log('contains (present/not present):');
