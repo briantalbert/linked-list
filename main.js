@@ -47,8 +47,8 @@ console.log(myList.find(69));
 console.log(myList.find(111385));
 console.log('');
 
-console.log('insertAt (butts, 3):');
-myList.insertAt('butts', 3);
+console.log('insertAt (cat, 3):');
+myList.insertAt('cat', 3);
 console.log(String(myList));
 console.log('');
 
